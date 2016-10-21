@@ -1,3 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body{
-  background: #0099cc;
+  background: url("../img/bg.png");
+}
+
+header{
+  width: 100%;
+  display: block;
+  .head{
+    background: url("../img/flags.png") 50% 50% no-repeat;
+    width: 1024px;
+    height: 177px;
+    margin: 0 auto;
+    .logo-ozon{
+      margin-top: 60px;
+      margin-left: 350px;
+
+    }
+    .logo-dari{
+      margin-top: 60px;
+      margin-left: 100px;
+    }
+    .hot-line{
+      margin-top: 20px;
+      float: right;
+      text-align: left;
+
+    }
+    span{
+      @font-face {
+        font-family: OpenSans-Semibold;
+        src: url(../fonts/OpenSans-Semibold.ttf);
+      }
+      font-family: OpenSans-Semibold;
+      color: #fff;
+      font-size: 16px;
+    }
+    .number{
+      @font-face {
+        font-family: Open-Sans-Exstrabold;
+        src: url(../fonts/Open-Sans-Exstrabold.ttf);
+      }
+      font-family: Open-Sans-Exstrabold;
+      color: #fff;
+      font-size: 24px;
+    }
+
+  }
 }
