@@ -29,7 +29,7 @@
 
       <div class="header">
         <span class="present">Подарить в электронном виде</span>
-        <img class="close" onclick="show('none')" src="img/close.png">
+        <img class="close" onclick="show('none'), contentShow('display')" src="img/close.png">
         <span class="num">+7 (495) 221 10 77</span>
       </div>
 
@@ -158,7 +158,7 @@
 
     </div>
 
-    <div onclick="show('none'), testLinkShow('none')" id="wrap"></div>
+    <div onclick="show('none'), testLinkShow('none'), contentShow('display')" id="wrap"></div>
 
     <header>
       <div class="head">
@@ -328,7 +328,7 @@
           Приступить к покупке
           <br>
           <img src="img/image.png">
-          
+
           <form>
             <select id="sum" name="sum">
                 <option value="500"><strong>500</strong> рублей</option>
