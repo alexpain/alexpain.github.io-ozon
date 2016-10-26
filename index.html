@@ -20,7 +20,7 @@
       <div class="logo">
         <img src="img/logo.png"><br>
         Подарочный<br> сертификат Ozon
-        <div id="price"></div>
+        <div class="div-price"><span id="price"></span>руб.</div>
       </div>
 
       <div class="content">
@@ -204,16 +204,17 @@
           <img src="img/image.png">
 
           <form>
-            <select name="sum">
+            <select id="sum" name="sum">
                 <option value="500"><strong>500</strong> рублей</option>
                 <option value="1000"><strong>1000</strong> рублей</option>
                 <option value="2000"><strong>2000</strong> рублей</option>
                 <option value="3000"><strong>3000</strong> рублей</option>
             </select>
             <br>
-            <input onclick="show('block')" type="submit" value="Купить">
+
 
           </form>
+          <input onclick="price(), show('block')" type="submit" value="Купить">
         </div>
       </div>
 
