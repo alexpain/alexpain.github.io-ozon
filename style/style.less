@@ -300,7 +300,7 @@ header{
           .left{
             text-align: left;
           }
-          font-style: Open-Sans;
+          font-family: Open-Sans;
           color: #333;
           font-size: 14px;
 
@@ -486,14 +486,18 @@ footer{
       font-size: 18px;
       font-family: Open-Sans;
     }
+
+
   }
 
   .content{
+    display: none;
     width: 760px;
-    height: 1000px;
+    height: 1250px;
     background-color: #fff;
     float: right;
     text-align: center;
+    border-radius: 0 0 20px 0;
 
     .no-activ, .activ{
       float: left;
@@ -524,6 +528,316 @@ footer{
     }
     .no-activ:hover{
       cursor: pointer;
+    }
+    form{
+      font-family: Open-Sans;
+      color: #333;
+      .yor-email{
+        margin: 0 auto;
+      }
+      div{
+        width: 325px;
+        height: 50px;
+      }
+      float: right;
+      margin-top: 20px;
+      label{
+        margin-top: 20px;
+        margin-left: 20px;
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        color: #333;
+      }
+      input{
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 325px;
+        height: 40px;
+        padding-left: 10px;
+        background: #ccc + #222;
+        border-radius: 10px;
+        border: 0;
+        float: left;
+      }
+      .cong{
+        margin-top: -50px;
+        float: right;
+        margin-right: 40px;
+        textarea{
+          margin-right: 20px;
+          margin-top: 20px;
+          padding-top: 10px;
+          padding-left: 10px;
+          background: #ccc + #222;
+          float: left;
+          border: 0;
+          border-radius: 10px;
+        }
+
+
+      }
+
+      h1{
+        margin-left: 20px;
+        text-align: left;
+        color: #ff9900;
+        font-size: 36px;
+        font-family: Open-Sans-bold;
+      }
+      .h1-select{
+        margin-top: 125px;
+      }
+
+      .card-logo{
+        float: left;
+        margin-left: 20px;
+      }
+      select{
+        margin-left: 20px;
+        width: 325px;
+        height: 40px;
+        background: linear-gradient(to top,  #fff, #ccc);
+        border: 0;
+        border-radius: 10px;
+        float: left;
+        color: #333;
+      }
+      span{
+        margin-top: 10px;
+        margin-left: 20px;
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        font-family: Open-Sans;
+        color: #333;
+      }
+
+      .footer{
+        font-family: Open-Sans;
+        margin-left: 20px;
+        text-align: left;
+        width: 720px;
+        margin-top: 80px;
+        bottom: 0;
+
+        hr{
+
+          background-color: #ffcc99;
+          border: 0;
+          height: 2px;
+          margin-bottom: 20px;
+        }
+        #price-bottom{
+          font-family: Open-Sans-Bold;
+          font-size: 44px;
+          color: #ff9900;
+          float: left;
+          left: 0;
+          margin-left: 0;
+        }
+        .rub{
+          margin-top: 35px;
+          float: left;
+
+          font-size: 16px;
+          color: #ff9900;
+        }
+        .pay-online{
+          margin-top: 20px;
+          margin-left: 5px;
+        }
+        .pay{
+          float: right;
+          font-family: Open-Sans-Bold;
+          font-size: 21px;
+          width: 210px;
+          height: 60px;
+          background: linear-gradient(to top,  #ff9900, #ffcc33);
+          color: #fff;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+  .content-email{
+    display: none;
+    width: 760px;
+    height: 1250px;
+    background-color: #fff;
+    float: right;
+    text-align: center;
+    border-radius: 0 0 20px 0;
+
+    .no-activ1, .activ1{
+      float: left;
+      margin-top: 25px;
+      padding-top: 20px;
+      width: 290px;
+      height: 40px;
+      font-size: 18px;
+      @font-face {
+        font-family: Open-Sans-Bold;
+        src: url(../fonts/Open-Sans-Bold.ttf);
+      }
+
+      font-family: Open-Sans-Bold;
+
+    }
+    .activ1{
+      background: #ff9900;
+      border-color: #ff9900 - #111;
+      margin-left: 100px;
+      border-radius: 50px 0 0 50px;
+      color: #fff;
+    }
+    .no-activ1{
+
+      border-radius: 0 50px 50px 0;
+      background:radial-gradient(#fff, #ccc);
+      color: #ff9900;
+    }
+    .no-activ1:hover{
+      cursor: pointer;
+    }
+    form{
+      font-family: Open-Sans;
+      color: #333;
+      .receiver-email{
+
+        width: 325px;
+        height: 50px;
+        float: right;
+        right: 0;
+        margin-right: 40px;
+        input{
+          margin-left: 0;
+        }
+      }
+      div{
+        width: 325px;
+        height: 50px;
+      }
+      float: right;
+      margin-top: 20px;
+      label{
+        margin-top: 20px;
+        margin-left: 20px;
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        color: #333;
+      }
+      input{
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 325px;
+        height: 40px;
+        padding-left: 10px;
+        background: #ccc + #222;
+        border-radius: 10px;
+        border: 0;
+        float: left;
+      }
+      .cong{
+        margin-top: -50px;
+        float: right;
+        margin-right: 40px;
+        textarea{
+          margin-right: 20px;
+          margin-top: 20px;
+          padding-top: 10px;
+          padding-left: 10px;
+          background: #ccc + #222;
+          float: left;
+          border: 0;
+          border-radius: 10px;
+        }
+
+
+      }
+
+      h1{
+        margin-left: 20px;
+        text-align: left;
+        color: #ff9900;
+        font-size: 36px;
+        font-family: Open-Sans-bold;
+      }
+      .h1-select{
+        margin-top: 125px;
+      }
+
+      .card-logo{
+        float: left;
+        margin-left: 20px;
+      }
+      select{
+        margin-left: 20px;
+        width: 325px;
+        height: 40px;
+        background: linear-gradient(to top,  #fff, #ccc);
+        border: 0;
+        border-radius: 10px;
+        float: left;
+        color: #333;
+      }
+      span{
+        margin-top: 10px;
+        margin-left: 20px;
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        font-family: Open-Sans;
+        color: #333;
+      }
+
+      .footer{
+        font-family: Open-Sans;
+        margin-left: 20px;
+        text-align: left;
+        width: 720px;
+        margin-top: 80px;
+        bottom: 0;
+
+        hr{
+
+          background-color: #ffcc99;
+          border: 0;
+          height: 2px;
+          margin-bottom: 20px;
+        }
+        #price-bottom1{
+          font-family: Open-Sans-Bold;
+          font-size: 44px;
+          color: #ff9900;
+          float: left;
+          left: 0;
+          margin-left: 0;
+        }
+        .rub{
+          margin-top: 35px;
+          float: left;
+
+          font-size: 16px;
+          color: #ff9900;
+        }
+        .pay-online{
+          margin-top: 20px;
+          margin-left: 5px;
+        }
+        .pay{
+          float: right;
+          font-family: Open-Sans-Bold;
+          font-size: 21px;
+          width: 210px;
+          height: 60px;
+          background: linear-gradient(to top,  #ff9900, #ffcc33);
+          color: #fff;
+          border-radius: 50px;
+        }
+      }
     }
   }
 }

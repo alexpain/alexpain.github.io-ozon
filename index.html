@@ -23,13 +23,123 @@
         <div class="div-price"><span id="price"></span>руб.</div>
       </div>
 
-      <div class="content">
-        <div class="no-activ" onclick="show('none')">Доставка на E-mail</div>
-        <div class="activ">Доставка по ссылке</div>
+      <div id="content" class="content">
+        <div class="no-activ" onclick="contentShow('none')">Доставка на E-mail</div>
+        <div class="activ">Доставка по ссылке</div><br>
 
-        <form></form>
+        <form>
+          <div class="yor-email">
+            <label for="email">Ваш E-mail:</label><br>
+            <input id="email" type="email" placeholder="ivanivanovich@gmail.com">
+          </div>
+          <img src="img/card.png">
+
+          <h1>Напишите текст поздравления</h1>
+
+          <div>
+            <label for="whom">Кому:</label><br>
+            <input id="whom" type="text" placeholder="Васе Иванову">
+          </div>
+
+          <div class="cong">
+            <label id="label-cong" for="congratulation">Текст поздравления:</label><br>
+            <textarea id="congratulation" rows="15" cols="40">Поздравляю с Днем Рождения, желаюсчастья в личной жизни!
+            </textarea>
+          </div>
+
+
+          <div>
+            <label for="title-congrat">Заголовок поздравления:</label><br>
+          <input id="title-congrat" type="text" placeholder="С Днем Рождения!!!"></div><br>
+
+          <div>
+            <label for="fron-whom">От кого:</label><br>
+            <input id="fron-whom" type="text" placeholder="От меня :)">
+          </div>
+          <br>
+          <h1 class="h1-select">Выберите способ оплаты </h1>
+
+          <img class="card-logo" src="img/card-logo.png">
+          <select id="payment">
+            <option value="visa">Картой <strong>VISA</strong> или <strong>MasterCard</strong></option>
+          </select><br>
+          <span>
+          К оплате принимаются карточки РФ и стран СНГ. Максимальная сумма, которую можно оплатить карточкой за один раз - 35000 руб.</span><br>
+
+          <div class="footer">
+            <hr>
+            <span id="price-bottom"></span><span class="rub">руб.</span>
+            <span class="pay-online">
+              Для оплаты заказа вы будете перенаправлены<br> на сайт платежной системы PayOnline System
+            </span>
+            <input class="pay" type="submit" value="Купить">
+          </div>
+        </form>
 
       </div>
+
+
+      <div id="content-email" class="content-email">
+        <div class="activ1" >Доставка на E-mail</div>
+        <div class="no-activ1" onclick="contentShow('block')">Доставка по ссылке</div><br>
+
+        <form>
+          <div class="receiver-email">
+            <label for="receiver-email">E-mail получателя:</label><br>
+            <input id="receiver-email" type="email" placeholder="ivanivanovich@gmail.com">
+          </div>
+          <div>
+            <label for="email1">Ваш E-mail:</label><br>
+            <input id="email1" type="email" placeholder="ivanivanovich@gmail.com">
+          </div>
+          <img src="img/card.png">
+
+          <h1>Напишите текст поздравления</h1>
+
+          <div>
+            <label for="whom1">Кому:</label><br>
+            <input id="whom1" type="text" placeholder="Васе Иванову">
+          </div>
+
+          <div class="cong">
+            <label id="label-cong1" for="congratulation">Текст поздравления:</label><br>
+            <textarea id="congratulation1" rows="15" cols="40">Поздравляю с Днем Рождения, желаюсчастья в личной жизни!
+            </textarea>
+          </div>
+
+
+          <div>
+            <label for="title-congrat1">Заголовок поздравления:</label><br>
+          <input id="title-congrat1" type="text" placeholder="С Днем Рождения!!!"></div><br>
+
+          <div>
+            <label for="fron-whom1">От кого:</label><br>
+            <input id="fron-whom1" type="text" placeholder="От меня :)">
+          </div>
+          <br>
+          <h1 class="h1-select">Выберите способ оплаты </h1>
+
+          <img class="card-logo" src="img/card-logo.png">
+          <select id="payment1">
+            <option value="visa">Картой <strong>VISA</strong> или <strong>MasterCard</strong></option>
+          </select><br>
+          <span>
+          К оплате принимаются карточки РФ и стран СНГ. Максимальная сумма, которую можно оплатить карточкой за один раз - 35000 руб.</span><br>
+
+          <div class="footer">
+            <hr>
+            <span id="price-bottom1"></span><span class="rub">руб.</span>
+            <span class="pay-online">
+              Для оплаты заказа вы будете перенаправлены<br> на сайт платежной системы PayOnline System
+            </span>
+            <input class="pay" type="submit" value="Купить">
+          </div>
+        </form>
+
+      </div>
+
+
+
     </div>
 
     <div onclick="show('none')" id="wrap"></div>
@@ -214,7 +324,7 @@
 
 
           </form>
-          <input onclick="price(), show('block')" type="submit" value="Купить">
+          <a href="#window"><input onclick="price(), show('block')" type="submit" value="Купить"></a>
         </div>
       </div>
 
