@@ -150,7 +150,6 @@ header{
   margin-top: 20px;
   border-radius: 88px 88px 25px 25px;
   text-align: center;
-
   .right-image{
     float: right;
 
@@ -403,5 +402,115 @@ footer{
   width: 225px;
   div{
     margin-right: 0;
+  }
+}
+
+
+#wrap{
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  background-color: rgba(1, 1, 1, 0.725);
+  z-index: 100;
+  overflow: auto;
+}
+
+#window{
+  background-color: #ffcc99;
+  width: 940px;
+  height: 1300px;
+  margin: 50px auto;
+  display: none;
+  z-index: 200;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 20px;
+  .header{
+    top: 0;
+    background-color: #ff9900;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px 20px 0 0;
+    .present{
+      margin-top: 10px;
+      margin-left: 10px;
+      float: left;
+      color: #fff;
+      font-size: 18px;
+      font-family: Open-Sans-Bold;
+    }
+    .num{
+      float: right;
+      margin-top: 10px;
+      margin-right: 20px;
+      color: #fff;
+      font-size: 18px;
+      font-family: Open-Sans-Bold;
+    }
+    .close{
+      float: right;
+      margin-top: 15px;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .logo{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-style: Open-Sans;
+    img{
+      box-shadow: 0 0.6em 10px rgba(000,000,000,0.2);
+      margin-bottom: 20px;
+    }
+  }
+
+  .content{
+    width: 760px;
+    height: 1000px;
+    background-color: #fff;
+    float: right;
+    text-align: center;
+
+    .no-activ, .activ{
+      float: left;
+      margin-top: 25px;
+      padding-top: 20px;
+      width: 290px;
+      height: 40px;
+      font-size: 18px;
+      @font-face {
+        font-family: Open-Sans-Bold;
+        src: url(../fonts/Open-Sans-Bold.ttf);
+      }
+
+      font-family: Open-Sans-Bold;
+
+    }
+    .activ{
+      background: #ff9900;
+      border-color: #ff9900 - #111;
+      border-radius: 0 50px 50px 0;
+      color: #fff;
+    }
+    .no-activ{
+      margin-left: 100px;
+      border-radius: 50px 0 0 50px;
+      background:radial-gradient(#fff, #ccc);
+      color: #ff9900;
+    }
+    .no-activ:hover{
+      cursor: pointer;
+    }
   }
 }

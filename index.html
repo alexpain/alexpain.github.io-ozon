@@ -3,9 +3,36 @@
   <head>
     <meta charset="utf-8">
     <link  href="style/style.css" rel="stylesheet">
+    <script src="script/show.js"></script>
     <title>Ozon</title>
   </head>
   <body>
+
+
+    <div id="window">
+
+      <div class="header">
+        <span class="present">Подарить в электронном виде</span>
+        <img class="close" onclick="show('none')" src="img/close.png">
+        <span class="num">+7 (495) 221 10 77</span>
+      </div>
+
+      <div class="logo">
+        <img src="img/logo.png"><br>
+        Подарочный<br> сертификат Ozon
+        <div id="price"></div>
+      </div>
+
+      <div class="content">
+        <div class="no-activ" onclick="show('none')">Доставка на E-mail</div>
+        <div class="activ">Доставка по ссылке</div>
+
+        <form></form>
+
+      </div>
+    </div>
+
+    <div onclick="show('none')" id="wrap"></div>
 
     <header>
       <div class="head">
@@ -75,8 +102,8 @@
         </div>
         <span>Ваш друг будет выбирать из <strong>более чем 2 миллионов подарков на <a href="#">ozon.ru</a></strong></span>
       </div>
-
       <img class="border-card" src="img/border-card.png">
+
       <div class="card">
         <span class="look-like">Ваш подарок<br> будет выглядеть вот так </span>
         <div class="card-main">
@@ -176,7 +203,7 @@
           <br>
           <img src="img/image.png">
 
-          <form action="#" method="post">
+          <form>
             <select name="sum">
                 <option value="500"><strong>500</strong> рублей</option>
                 <option value="1000"><strong>1000</strong> рублей</option>
@@ -184,13 +211,14 @@
                 <option value="3000"><strong>3000</strong> рублей</option>
             </select>
             <br>
-            <input type="submit" value="Купить">
+            <input onclick="show('block')" type="submit" value="Купить">
 
           </form>
         </div>
       </div>
 
     </div>
+
     <footer>
       © 2005-2014, Дари Подарки - интернет-магазин подарочных сертификатов, карт в Москве и Санкт-Петербурге.<br>
       Все права защищены.
