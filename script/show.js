@@ -22,5 +22,11 @@ function contentShow(state) {
     document.getElementById('content').style.display = state;
     document.getElementById('content-email').style.display = 'none';
   }
+}
 
+function testLinkShow(state,a) {
+  document.getElementById('wrap').style.display = state;
+  document.getElementById('test-sert').style.display = state;
+  var spanLink= document.getElementById('link');
+  spanLink.innerHTML = a;
 }

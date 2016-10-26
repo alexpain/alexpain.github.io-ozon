@@ -7,7 +7,24 @@
     <title>Ozon</title>
   </head>
   <body>
+    <div class="light"></div>
 
+
+    <div id="test-sert" class="test-sert">
+      <img onclick="testLinkShow('none')" src="img/close-orange.png">
+      <h1>Тестовый сертификат</h1>
+      <div>Хочу получить тестовый сертификат с поздравительной открыткой на свой e-mail<span id="link"></span> и посмотреть, как это работает.</div>
+      <form>
+        <div class="test-your-email">
+          <label for="test-email">Ваш E-mail:</label><br>
+          <input id="test-email" type="email" placeholder="ivanivanovich@gmail.com">
+        </div><br>
+        <div>
+          <input id="check" type="checkbox" checked>
+          <label id="lbl" for="check">Получать новости и спецпредложения от магазина DariPodarki.ru</label></div>
+          <input type="submit" value="Отправить">
+      </form>
+    </div>
 
     <div id="window">
 
@@ -142,7 +159,7 @@
 
     </div>
 
-    <div onclick="show('none')" id="wrap"></div>
+    <div onclick="show('none'), testLinkShow('none')" id="wrap"></div>
 
     <header>
       <div class="head">
@@ -305,8 +322,8 @@
         <h1>Протестировать бесплатно</h1>
         <br>
 
-        <button class="test-email">Тестовый сертификат по e-mail</button>
-        <button class="test-link">Тестовый сертификат по ссылке</button>
+        <a href="#"><button onclick="testLinkShow('block')" class="test-email">Тестовый сертификат по e-mail</button></a>
+        <a href="#"><button onclick="testLinkShow('block',' в виде ссылки')" class="test-link">Тестовый сертификат по ссылке</button></a>
         <br>
         <div id="buy" class="buy">
           Приступить к покупке
@@ -324,12 +341,11 @@
 
 
           </form>
-          <a href="#window"><input onclick="price(), show('block')" type="submit" value="Купить"></a>
+          <a href="#"><input onclick="price(), show('block')" type="submit" value="Купить"></a>
         </div>
       </div>
 
     </div>
-
     <footer>
       © 2005-2014, Дари Подарки - интернет-магазин подарочных сертификатов, карт в Москве и Санкт-Петербурге.<br>
       Все права защищены.
